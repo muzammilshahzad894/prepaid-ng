@@ -68,6 +68,10 @@ Color Section Begin
 .color-black {
     color: #0E0940;
 }
+.tabs-list{
+    display: flex;
+    justify-content: center;
+}
 
 /*****************************************************
 Helper Classes Section Begin

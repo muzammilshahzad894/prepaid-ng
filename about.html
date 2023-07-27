@@ -290,7 +290,8 @@
     const animateOnScroll = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("drop-out"); // Add the 'drop-out' class to trigger the animation
+          entry.target.classList.remove("drop-out"); // Add the 'drop-out' class to trigger the animation
+          entry.target.classList.add("drop-in");
           observer.unobserve(entry.target); // Stop observing the element once animation starts
         }
       });
