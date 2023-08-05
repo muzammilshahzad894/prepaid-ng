@@ -89,7 +89,7 @@ Helper Classes Section Begin
 }
 
 .nav-bar-color {
-    position: sticky !important;
+    /* position: sticky !important; */
     background-color: #0d9587 !important;
     height: 100px;
 
