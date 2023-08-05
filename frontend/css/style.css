@@ -1086,6 +1086,39 @@ tbody tr {
     .xs-mt-20px {
         margin-top: 20px;
     }
+    input:checked+label {
+       color: #0d9587;
+    border: 1px solid #ddd;
+    border-bottom: 5px solid #0d9587;
+    border-top: 1px solid #fff;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+}
+.tabs-list{
+    display: unset !important;
+}
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: bold;
+    color: #979797;
+    border: 1px solid transparent;
+    width: 100%;
+    text-align: left !important;
+}
+.tabs_container{
+    width: 100% !important;
+
+}
+.faq-card{
+    padding: 20px !important;
+}
+.custom-color{
+    font-size: 35px !important;
+}
 
     .description {
         text-align: center;
