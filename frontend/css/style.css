@@ -479,6 +479,9 @@ Buy & Renew Section Begin
         border-bottom-left-radius: 10px;
         padding: 5px 2px;
     }
+    .intro-container>a{
+        font-size: 18px !important;
+    }
     .img-32px{
         height: 30px;
         width: 30px;
@@ -819,15 +822,7 @@ Footer end
     margin-bottom: 30px;
 }
 
-.intro-container>a {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    color: #FFFFFF;
-    padding-left: 10px;
-    text-decoration: none;
-}
+.intro-container>a
 
 .image-1-container {
     position: relative;
