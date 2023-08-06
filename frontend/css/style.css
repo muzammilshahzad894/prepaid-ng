@@ -33,6 +33,7 @@ svg {
     width: 25px;
 }
 
+
 /*****************************************************
 Color Section Begin
 *****************************************************/
@@ -97,6 +98,11 @@ Helper Classes Section Begin
 
 .header-img {
     margin-top: 30px !important;
+}
+.form-control:focus{
+    border-color: none !important;
+    box-shadow: none !important;
+    border-bottom: 3px solid #0d9587 !important;
 }
 
 .font-16-bold {
@@ -187,6 +193,7 @@ h3.color-black.font-24::before {
     height: 60px;
     text-align: center;
     border-radius: 10px;
+    border-bottom: 3px solid #0d9587 ;
 }
 
 .border {
@@ -430,10 +437,13 @@ Buy & Renew Section Begin
 #buy-renew .nav-link {
     color: #fff;
 }
+#myTab .nav-link{
+    width: 120px;
+}
 
 #buy-renew .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    border: 4px solid white !important;
+    border-bottom: 3px solid #fff;
     background-color: #0d9587;
     border-top-right-radius: 0px !important;
     border-top-left-radius: 0px !important;
@@ -460,6 +470,9 @@ Buy & Renew Section Begin
         font-size: smaller;
         width: 65px;
         border-bottom: 0px;
+    }
+    .mobile-view{
+        margin-top: 0px !important;
     }
 
     .nav-link {
@@ -781,7 +794,7 @@ Footer end
 .intro-container {
     padding: 15px 25px;
     background: #0d9587;
-    border-radius: 55px;
+    /* border-radius: 55px; */
     margin-bottom: 30px;
 }
 
@@ -924,7 +937,7 @@ tbody tr {
         font-size: 20px;
         line-height: 30px;
         background: #f7fffe;
-        border: 3px solid #0d9587;
+        border-bottom: 3px solid #0d9587;
     }
 
     .lg-font-24 {
@@ -935,7 +948,8 @@ tbody tr {
         color: #E5D1FF;
         text-align: center;
         line-height: 20px;
-        border-radius: 10px !important;
+        /* border-radius: 10px !important; */
+        width: 100% !important;
     }
 
     .button-btn {
@@ -943,9 +957,9 @@ tbody tr {
         justify-content: center;
     }
 
-    .lg-font-24:hover {
+    /* .lg-font-24:hover {
         border-radius: 20px !important;
-    }
+    } */
 
     .description {
         text-align: center;
@@ -955,7 +969,10 @@ tbody tr {
     }
 
     .lg-pl-170px {
-        padding-left: 170px;
+        /* padding-left: 170px; */
+        width: 100%;
+        justify-content: center;
+        display: flex;
     }
 
     .lg-mt-50px {
