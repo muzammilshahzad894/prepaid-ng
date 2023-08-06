@@ -38,7 +38,7 @@ svg {
     justify-content: center;
     display: flex;
     gap: 5px;
-    padding-top: 10px;
+    padding-top: 2px;
 }
 
 
@@ -482,6 +482,9 @@ Buy & Renew Section Begin
     .img-32px{
         height: 30px;
         width: 30px;
+    }
+    .lg-pl-170px{
+        padding-top: 10px !important;
     }
 
     #buy-renew .nav-tabs .nav-item {
